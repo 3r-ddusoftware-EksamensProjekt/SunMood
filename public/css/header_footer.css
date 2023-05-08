@@ -2,14 +2,14 @@
 
 .ul_head {
   align-items: center;
-  padding: 1.5% 4%;
+  padding: 1% 4%;
   isolation: isolate;
   overflow: hidden;
   margin: 0px;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-m);
+  gap: var(--spacing-l);
 
   /*
   display: grid;
@@ -20,7 +20,7 @@
 .nav_head {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: space-between;
   background-color: var(--shades-main-brand-color);
   /*
@@ -40,30 +40,31 @@
   text-align: center;
   text-decoration: none;
 
-  color: var(--shades-light-shade);
-  text-shadow: 1.5px 0.7px 0px var(--shades-dark-accent);
+  color: var(--shades-dark-shades);
+  /*text-shadow: 1.5px 0.7px 0px var(--shades-light-shade);*/
 }
 
 .li_head .elem_head:hover {
-  color: var(--shades-dark-accent);
-  text-shadow: 1.5px 0.7px 0px var(--shades-dark-shades);
+  color: var(--shades-light-shade);
+  text-shadow: 0px 0px 5px var(--shades-dark-accent);
 }
 
 .head_text {
   width: auto;
   height: auto;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  color: var(--shades-dark-shades);
 }
 
 #opret_bruger {
-  color: var(--shades-light-shade);
-  text-shadow: 1.5px 0.7px 0px var(--shades-dark-shades);
+  
+  text-shadow: 0px 0px 5px var(--shades-light-shade);
 }
 
 #opret_bruger:hover {
-  color: var(--shades-dark-shades);
-  text-shadow: 1.5px 0.7px 0px var(--shades-dark-accent);
+  color: var(--shades-light-shade);
+  text-shadow: 0px 0px 5px var(--shades-dark-shades);
 }
 /* Fotter */
 
@@ -80,6 +81,7 @@
   grid-template-columns: repeat(3, auto);
   gap: 3rem;
 }
+
 .li_foot {
   float: left;
 }
@@ -102,8 +104,6 @@
 .logo {
   margin: auto 4%;
   padding: auto;
-  color: var(--shades-light-shade);
-  font-size: 1.2rem;
   text-decoration: none;
 }
 
