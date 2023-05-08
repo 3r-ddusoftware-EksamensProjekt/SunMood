@@ -100,10 +100,11 @@
 /* Same */
 
 .logo {
-  padding: 20px 4%;
-  margin: 0;
+  margin: 20px 4%;
+  padding: auto;
   color: var(--shades-light-shade);
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /*
