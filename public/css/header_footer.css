@@ -1,0 +1,123 @@
+/* Header */
+
+.ul_head {
+  align-items: center;
+  padding: 20px 4%;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--spacing-m);
+
+  /*
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 4rem;*/
+}
+
+.nav_head {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  background-color: var(--shades-main-brand-color);
+  /*
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;*/
+}
+
+.button_head {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.li_head .elem_head {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--shades-light-shade);
+  text-shadow: 1.5px 0.7px 0px var(--shades-dark-accent);
+}
+
+.li_head .elem_head:hover {
+  color: var(--shades-dark-accent);
+  text-shadow: 1.5px 0.7px 0px var(--shades-dark-shades);
+}
+
+.head_text {
+  width: auto;
+  height: auto;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#opret_bruger {
+  color: var(--shades-light-shade);
+  text-shadow: 1.5px 0.7px 0px var(--shades-dark-shades);
+}
+
+#opret_bruger:hover {
+  color: var(--shades-dark-shades);
+  text-shadow: 1.5px 0.7px 0px var(--shades-dark-accent);
+}
+/* Fotter */
+
+.ul_foot {
+  height: 16rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 3rem 4%;
+  overflow: hidden;
+  background-color: var(--shades-dark-shades);
+  align-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 3rem;
+}
+.li_foot {
+  float: left;
+}
+
+.li_foot .a_foot {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--shades-light-shade);
+}
+
+.p_foot {
+  color: var(--shades-light-shade);
+  margin: 0;
+  padding: 0;
+}
+
+/* Same */
+
+.logo {
+  padding: 20px 4%;
+  margin: 0;
+  color: var(--shades-light-shade);
+  font-size: 1.2rem;
+}
+
+/*
+https://www.w3schools.com/howto/howto_js_sticky_header.asp
+*/
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <script src="./js/weather.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
+  </head>
+  <body>
+    <main>
+      <h1>This is the front page!</h1>
+      <a href="./html/data_overview.html"
+        >This is a link to the data example.</a
+      >
+      <a href="/sunMood">This is startside</a>
+    </main>
+    <div id="current">
+      <p id="text">This is the current weather text</p>
+      <img id="icon" />
+    </div>
+    <div id="forecast">
+      <p id="time">time</p>
+      <p id="isDay">isDay</p>
+      <p id="cloud">cloud</p>
+    </div>
+
+    <p>
+      Powered by
+      <a href="https://www.weatherapi.com/" title="Free Weather API"
+        >WeatherAPI.com</a
+      >
+    </p>
+  </body>
+</html>

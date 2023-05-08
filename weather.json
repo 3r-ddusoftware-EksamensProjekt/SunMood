@@ -1,0 +1,412 @@
+{
+  "location": {
+    "name": "Slagelse",
+    "region": "Sjelland",
+    "country": "Denmark",
+    "lat": 55.4,
+    "lon": 11.37,
+    "tz_id": "Europe/Copenhagen",
+    "localtime_epoch": 1679580596,
+    "localtime": "2023-03-23 15:09"
+  },
+  "current": {
+    "last_updated_epoch": 1679580000,
+    "last_updated": "2023-03-23 15:00",
+    "is_day": 1,
+    "condition": {
+      "text": "Partly cloudy",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+      "code": 1003
+    },
+    "cloud": 25,
+    "uv": 4.0
+  },
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2023-03-23",
+        "date_epoch": 1679529600,
+        "day": {
+          "totalsnow_cm": 0.0,
+          "daily_will_it_rain": 1,
+          "daily_chance_of_rain": 98,
+          "daily_will_it_snow": 0,
+          "daily_chance_of_snow": 0,
+          "condition": {
+            "text": "Moderate rain",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png",
+            "code": 1189
+          }
+        },
+        "astro": {
+          "sunrise": "06:09 AM",
+          "sunset": "06:33 PM",
+          "is_moon_up": 0,
+          "is_sun_up": 0
+        },
+        "hour": [
+          {
+            "time_epoch": 1679526000,
+            "time": "2023-03-23 00:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png",
+              "code": 1153
+            },
+            "cloud": 100,
+            "will_it_rain": 0,
+            "chance_of_rain": 68,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679529600,
+            "time": "2023-03-23 01:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Light rain",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png",
+              "code": 1183
+            },
+            "cloud": 100,
+            "will_it_rain": 0,
+            "chance_of_rain": 54,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679533200,
+            "time": "2023-03-23 02:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png",
+              "code": 1153
+            },
+            "cloud": 100,
+            "will_it_rain": 1,
+            "chance_of_rain": 80,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679536800,
+            "time": "2023-03-23 03:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Patchy rain possible",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+              "code": 1063
+            },
+            "cloud": 100,
+            "will_it_rain": 0,
+            "chance_of_rain": 61,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679540400,
+            "time": "2023-03-23 04:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png",
+              "code": 1153
+            },
+            "cloud": 100,
+            "will_it_rain": 1,
+            "chance_of_rain": 85,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679544000,
+            "time": "2023-03-23 05:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Patchy rain possible",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+              "code": 1063
+            },
+            "cloud": 100,
+            "will_it_rain": 0,
+            "chance_of_rain": 58,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679547600,
+            "time": "2023-03-23 06:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Light rain shower",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/353.png",
+              "code": 1240
+            },
+            "cloud": 94,
+            "will_it_rain": 0,
+            "chance_of_rain": 55,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679551200,
+            "time": "2023-03-23 07:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Light rain shower",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+              "code": 1240
+            },
+            "cloud": 93,
+            "will_it_rain": 0,
+            "chance_of_rain": 63,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679554800,
+            "time": "2023-03-23 08:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png",
+              "code": 1153
+            },
+            "cloud": 100,
+            "will_it_rain": 1,
+            "chance_of_rain": 98,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679558400,
+            "time": "2023-03-23 09:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png",
+              "code": 1153
+            },
+            "cloud": 100,
+            "will_it_rain": 1,
+            "chance_of_rain": 85,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679562000,
+            "time": "2023-03-23 10:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Light rain",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/296.png",
+              "code": 1183
+            },
+            "cloud": 100,
+            "will_it_rain": 1,
+            "chance_of_rain": 97,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679565600,
+            "time": "2023-03-23 11:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Overcast",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+              "code": 1009
+            },
+            "cloud": 100,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679569200,
+            "time": "2023-03-23 12:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Light drizzle",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png",
+              "code": 1153
+            },
+            "cloud": 97,
+            "will_it_rain": 1,
+            "chance_of_rain": 96,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679572800,
+            "time": "2023-03-23 13:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Overcast",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+              "code": 1009
+            },
+            "cloud": 93,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679576400,
+            "time": "2023-03-23 14:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+              "code": 1006
+            },
+            "cloud": 76,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679580000,
+            "time": "2023-03-23 15:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 21,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679583600,
+            "time": "2023-03-23 16:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 8,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679587200,
+            "time": "2023-03-23 17:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 4,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679590800,
+            "time": "2023-03-23 18:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 7,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679594400,
+            "time": "2023-03-23 19:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 10,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679598000,
+            "time": "2023-03-23 20:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 2,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679601600,
+            "time": "2023-03-23 21:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 8,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679605200,
+            "time": "2023-03-23 22:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 14,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          },
+          {
+            "time_epoch": 1679608800,
+            "time": "2023-03-23 23:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png",
+              "code": 1006
+            },
+            "cloud": 86,
+            "will_it_rain": 0,
+            "chance_of_rain": 0,
+            "will_it_snow": 0,
+            "chance_of_snow": 0
+          }
+        ]
+      }
+    ]
+  }
+}
