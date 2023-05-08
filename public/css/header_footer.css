@@ -2,7 +2,7 @@
 
 .ul_head {
   align-items: center;
-  padding: 20px 4%;
+  padding: 1.5% 4%;
   isolation: isolate;
   overflow: hidden;
   margin: 0px;
@@ -100,7 +100,7 @@
 /* Same */
 
 .logo {
-  margin: 20px 4%;
+  margin: auto 4%;
   padding: auto;
   color: var(--shades-light-shade);
   font-size: 1.2rem;
