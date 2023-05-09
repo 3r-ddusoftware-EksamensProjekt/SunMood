@@ -1,0 +1,20 @@
+body {
+  background-color: var(--action-success);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.samlet {
+  background-color: rgba(242, 246, 240, 0.75);
+}
+
+/*
+display: grid;
+justify-content: space-evenly;
+align-content: center;
+*/

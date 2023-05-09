@@ -29,9 +29,6 @@ spanLogin.onclick = function () {
   loginModal.close();
 };
 
-//
-//
-
 opretModal.addEventListener("click", (e) =>
   closeModalOnClickOutside(opretModal, e)
 );
@@ -55,30 +52,3 @@ function closeModalOnClickOutside(modal, e) {
     }
   }
 }
-
-/* 
-
-// When the user clicks the button, open the modal
-btnLogin.onclick = function () {
-  loginPopup.style.display = "block";
-};
-
-
-
-// When the user clicks the button, open the modal
-btnOpret.onclick = function () {
-  opretPopup.style.display = "block";
-};
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == opretPopup) {
-    opretPopup.style.display = "none";
-  }
-  if (event.target == loginPopup) {
-    loginPopup.style.display = "none";
-  }
-};
- */

@@ -5,21 +5,35 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="/css/mainStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sunMood.css" />
 
-    <%- include("../partials/header_footer") %>
-    <%- include('../partials/popup'); %>
+    <%- include("../partials/header_footer") %> <%-
+    include('../partials/popup'); %>
+
+    <script src="js/cssHelp.js" defer></script>
   </head>
 
   <body>
-    <%- include("../partials/nav_head") %>
+    <header id="myHeader"><%- include("../partials/nav_head"); %></header>
 
-    <p>
-      Dette er <strong>eksempel 2</strong>, som har samme head og navbar som
-      eksempel 1 vha. partials.
-    </p>
+    <div class="samlet">
+      <div class="timer">
+        <div id="top" class="amountSun Body-P-Larger">Mængden af Sollys i dag er ... timer</div>
+        <div class="vejrImage">
+          <img src="" alt="" />
+        </div>
+        <div id="bottom" class="amountSun Body-P-Larger">Det er x flere timer end i går</div>
+      </div>
+      <div class="mood">
+        <div class="moodText Body-P-Larger">Hvordan er dit humør?</div>
+        <div class="moodImage">
+          <img src="" alt="" />
+        </div>
+        <div class="amountSun Body-P-Small">Se humør historik</div>
+      </div>
+    </div>
+
+    <footer><%- include("../partials/nav_foot") %></footer>
   </body>
-
-  <footer><%- include("../partials/nav_foot") %></footer>
 </html>
