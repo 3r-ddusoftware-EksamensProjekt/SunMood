@@ -7,7 +7,6 @@
   border: solid 2px rgba(0, 0, 0, 0.5);
 }
 
-
 .popup::backdrop {
   background-color: rgba(186, 96, 59, 0.5);
 }
@@ -29,6 +28,7 @@
   /*hen ad*/
   grid-template-columns: auto;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .opret_form {
@@ -37,22 +37,18 @@
 
 .tilmeld_header {
   grid-area: header;
-  margin: 1rem 1rem 0 0;
 }
-
 
 .opret_email {
   grid-area: email;
   display: block;
-  width: 100%;
-  margin: 0 auto;
+
 }
 
 .opret_kode {
   grid-area: kode;
   display: block;
-  width: 100%;
-  margin: 0 auto;
+
 }
 
 .opret_submit {
@@ -61,13 +57,15 @@
 
 #submit {
   border-radius: 10px;
-  padding: 2.5% 8%;
+  padding: 8px 16px;
+
   border: solid 3px var(--shades-dark-accent);
   background-color: var(--shades-dark-accent);
   font-size: 1.2rem;
   color: var(--shades-light-shade);
   box-shadow: 0 4px 10px 0 rgba(36, 58, 58, 0.5);
   margin: 0.5rem;
+  line-height: 1;
 }
 
 .textbox {
@@ -89,7 +87,7 @@
 .label {
   font-size: 1.2rem;
   color: var(--shades-dark-shades);
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 /* The Close Button */
@@ -97,7 +95,7 @@
   color: var(--shades-dark-accent);
   font-size: 28px;
   font-weight: bold;
-  line-height: .5;
+  line-height: 0.5;
   position: absolute;
   top: 1rem;
   right: 1rem;
