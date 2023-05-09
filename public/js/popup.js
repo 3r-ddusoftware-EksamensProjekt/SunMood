@@ -10,7 +10,7 @@ const btnOpret = document.getElementById("opret_btn");
 
 // Get the <span> element that closes the modal
 const spanLogin = document.getElementsByClassName("close_login")[0];
-const spanOpret = document.getElementsByClassName("close_opret")[0];
+const closeOpret = document.getElementById("close_opret");
 
 btnLogin.addEventListener("click", () => {
   loginModal.showModal();
@@ -20,7 +20,7 @@ btnOpret.addEventListener("click", () => {
 });
 
 // When the user clicks on <span> (x), close the modal
-spanOpret.onclick = function () {
+closeOpret.onclick = function () {
   opretModal.close();
 };
 

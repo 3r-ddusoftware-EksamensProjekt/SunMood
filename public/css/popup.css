@@ -5,8 +5,8 @@
   background-color: var(--shades-main-brand-color);
   border-radius: 15px;
   border: solid 2px rgba(0, 0, 0, 0.5);
-  width: 60%;
 }
+
 
 .popup::backdrop {
   background-color: rgba(186, 96, 59, 0.5);
@@ -27,7 +27,7 @@
   grid-template-rows: min-content;
 
   /*hen ad*/
-  grid-template-columns: auto 15px;
+  grid-template-columns: auto;
   gap: 1rem;
 }
 
@@ -37,16 +37,9 @@
 
 .tilmeld_header {
   grid-area: header;
-  margin: 0.5rem;
+  margin: 1rem 1rem 0 0;
 }
 
-.close_opret {
-  grid-area: close;
-  margin: 0;
-  padding: 0;
-  height: 10px;
-  width: fit-content;
-}
 
 .opret_email {
   grid-area: email;
@@ -68,7 +61,7 @@
 
 #submit {
   border-radius: 10px;
-  padding: 1.5% 2.5%;
+  padding: 2.5% 8%;
   border: solid 3px var(--shades-dark-accent);
   background-color: var(--shades-dark-accent);
   font-size: 1.2rem;
