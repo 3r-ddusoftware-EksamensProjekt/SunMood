@@ -9,8 +9,39 @@ footer {
   margin-top: auto;
 }
 
+/* Define grid container */
 .samlet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   background-color: rgba(242, 246, 240, 0.75);
+  margin: auto 0;
+}
+
+/* Define grid items */
+.timer,
+.mood {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* Define styles for specific elements */
+.vejrImage,
+.moodImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountSun,
+.moodText {
+  text-align: center;
+}
+
+.imageText {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /*
