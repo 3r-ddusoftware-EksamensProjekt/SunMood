@@ -1,16 +1,88 @@
 <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+
 <script src="js/popup.js" defer></script>
 
-<div id="login_popup" class="popup">
-  <div id="login_content" class="popup_content">
-    <span class="close_login close" id="close_login">&times;</span>
-    <p>Hello, login_popup</p>
-  </div>
-</div>
+<dialog id="opret_popup" class="popup">
+  <span class="close" id="close_opret">&times;</span>
 
-<div id="opret_popup" class="popup">
-  <div id="opret_content" class="popup_content">
-    <span class="close_opret close" id="close_opret">&times;</span>
-    <p>Hello, opret_bruger</p>
+  <div id="content" class="popup_content">
+    <div class="header">
+      <h4 class="header">Tilmeld dig nu</h4>
+    </div>
+
+    <form class="form">
+      <div class="email">
+        <label for="email" class="opret label">Indtast din email:</label>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="opret textbox"
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="kode">
+        <label for="pss_opret" class="opret label"
+          >Indtast en adgangskode:</label
+        >
+        <input
+          type="password"
+          name="pss_opret"
+          id="pss_opret"
+          placeholder="Adgangskode"
+          class="opret textbox"
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="submit">
+        <input
+          type="submit"
+          value="Opret bruger"
+          id="submit"
+          autocomplete="off"
+        />
+      </div>
+    </form>
   </div>
-</div>
+</dialog>
+
+<dialog id="login_popup" class="popup">
+  <span class="close" id="close_login">&times;</span>
+
+  <div id="content" class="popup_content">
+    <div class="header">
+      <h4 class="header">Log ind</h4>
+    </div>
+
+    <form class="form">
+      <div class="email">
+        <label for="email" class="label">Indtast din email:</label>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="textbox"
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="kode">
+        <label for="pss_login" class="label">Indtast din adgangskode:</label>
+        <input
+          type="password"
+          name="pss_login"
+          id="pss_login"
+          placeholder="Adgangskode"
+          class="textbox"
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="submit">
+        <input type="submit" value="Log ind" id="submit" autocomplete="off" />
+      </div>
+    </form>
+  </div>
+</dialog>

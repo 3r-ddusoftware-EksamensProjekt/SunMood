@@ -55,6 +55,7 @@
   margin: 0;
   font-size: 1.25rem;
   color: var(--shades-dark-shades);
+  cursor: pointer;
 }
 
 #opret_bruger {
