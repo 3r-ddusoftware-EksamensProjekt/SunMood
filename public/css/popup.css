@@ -1,36 +1,113 @@
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 */
 
-/* The Modal (background) */
 .popup {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: var(--shades-main-brand-color);
+  border-radius: 15px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  width: 60%;
 }
 
-/* Modal Content */
-.popup_content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+.popup::backdrop {
+  background-color: rgba(186, 96, 59, 0.5);
+}
+
+.opret {
+  margin: 0;
+}
+
+#opret_content {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "email email "
+    "kode kode "
+    "knap  .";
+  /*nedaf*/
+  grid-template-rows: min-content;
+
+  /*hen ad*/
+  grid-template-columns: auto 15px;
+  gap: 1rem;
+}
+
+.opret_form {
+  display: contents;
+}
+
+.tilmeld_header {
+  grid-area: header;
+  margin: 0.5rem;
+}
+
+.close_opret {
+  grid-area: close;
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  width: fit-content;
+}
+
+.opret_email {
+  grid-area: email;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.opret_kode {
+  grid-area: kode;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.opret_submit {
+  grid-area: knap;
+}
+
+#submit {
+  border-radius: 10px;
+  padding: 1.5% 2.5%;
+  border: solid 3px var(--shades-dark-accent);
+  background-color: var(--shades-dark-accent);
+  font-size: 1.2rem;
+  color: var(--shades-light-shade);
+  box-shadow: 0 4px 10px 0 rgba(36, 58, 58, 0.5);
+  margin: 0.5rem;
+}
+
+.textbox {
+  width: -moz-available;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 8px 16px;
+
+  background-color: var(--shades-light-shade);
+  color: var(--shades-dark-shades);
+  border-radius: 15px;
+  border: solid 2px var(--shades-dark-accent);
+  background-color: var(--shades-light-shade);
+
+  display: block;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 1.2rem;
+  color: var(--shades-dark-shades);
+  margin-left: 0.5rem;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
+  color: var(--shades-dark-accent);
   font-size: 28px;
   font-weight: bold;
+  line-height: .5;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .close:hover,

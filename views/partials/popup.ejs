@@ -1,16 +1,74 @@
 <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+
 <script src="js/popup.js" defer></script>
 
-<div id="login_popup" class="popup">
-  <div id="login_content" class="popup_content">
-    <span class="close_login close" id="close_login">&times;</span>
-    <p>Hello, login_popup</p>
+<dialog id="opret_popup" class="popup">
+  <div class="close_opret">
+    <span class="close" id="close_opret">&times;</span>
   </div>
-</div>
-
-<div id="opret_popup" class="popup">
   <div id="opret_content" class="popup_content">
-    <span class="close_opret close" id="close_opret">&times;</span>
-    <p>Hello, opret_bruger</p>
+    <div class="tilmeld_header">
+      <h4 class="opret">Tilmeld dig nu for en gratis konto</h4>
+    </div>
+
+    <form class="opret_form">
+      <div class="opret_email">
+        <label for="email" class="opret label nE_Label"
+          >Indtast din email:</label
+        >
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="opret textbox"
+          id="email"
+        />
+      </div>
+      <div class="opret_kode">
+        <label for="pss_Opret" class="opret label nK_Label"
+          >Indtast en ny adgangskode:</label
+        >
+        <input
+          type="password"
+          name="pss_Opret"
+          id="pss_Opret"
+          placeholder="Adgangskode"
+          class="opret textbox"
+          id="kode"
+        />
+      </div>
+    </form>
+    <div class="opret_submit">
+      <input type="submit" value="Opret bruger" class="opret" id="submit" />
+    </div>
   </div>
-</div>
+</dialog>
+
+<dialog id="login_popup" class="popup">
+  <div id="login_content" class="popup_content">
+    <div>
+      <span class="close_login close" id="close_login">&times;</span>
+      <h4 class="login_Header">Log ind</h4>
+    </div>
+
+    <form class="login_Form">
+      <div class="login_email">
+        <label for="email" class="label">Indtast din email:</label>
+        <input type="email" placeholder="Email" name="email" class="textbox" />
+      </div>
+      <div class="login_kode">
+        <label for="pss_Login" class="label">Indtast din adgangskode:</label>
+        <input
+          type="password"
+          name="pss_Login"
+          id="pss_Login"
+          placeholder="Adgangskode"
+          class="textbox"
+        />
+      </div>
+      <div class="login_submit">
+        <input type="submit" value="Log ind" id="submit" />
+      </div>
+    </form>
+  </div>
+</dialog>
