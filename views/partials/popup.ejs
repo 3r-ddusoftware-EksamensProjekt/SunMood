@@ -5,22 +5,24 @@
 <dialog id="opret_popup" class="popup">
   <span class="close" id="close_opret">&times;</span>
 
-  <div id="opret_content" class="popup_content">
-    <div class="tilmeld_header">
-      <h4 class="opret">Tilmeld dig nu</h4>
+  <div id="content" class="popup_content">
+    <div class="header">
+      <h4 class="header">Tilmeld dig nu</h4>
     </div>
 
-    <form class="opret_form">
-      <div class="opret_email">
+    <form class="form">
+      <div class="email">
         <label for="email" class="opret label">Indtast din email:</label>
         <input
           type="email"
           placeholder="Email"
           name="email"
           class="opret textbox"
+          required
+          autocomplete="off"
         />
       </div>
-      <div class="opret_kode">
+      <div class="kode">
         <label for="pss_opret" class="opret label"
           >Indtast en adgangskode:</label
         >
@@ -30,28 +32,38 @@
           id="pss_opret"
           placeholder="Adgangskode"
           class="opret textbox"
+          required
+          autocomplete="off"
         />
       </div>
+      <div class="submit">
+        <input type="submit" value="Opret bruger" id="submit" autocomplete="off" />
+      </div>
     </form>
-    <div class="opret_submit">
-      <input type="submit" value="Opret bruger" class="opret" id="submit" />
-    </div>
   </div>
 </dialog>
 
 <dialog id="login_popup" class="popup">
-  <div id="login_content" class="popup_content">
-    <div>
-      <span class="close_login close" id="close_login">&times;</span>
-      <h4 class="login_header">Log ind</h4>
+  <span class="close" id="close_login">&times;</span>
+
+  <div id="content" class="popup_content">
+    <div class="header">
+      <h4 class="header">Log ind</h4>
     </div>
 
-    <form class="login_form">
-      <div class="login_email">
+    <form class="form">
+      <div class="email">
         <label for="email" class="label">Indtast din email:</label>
-        <input type="email" placeholder="Email" name="email" class="textbox" />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="textbox"
+          required
+          autocomplete="off"
+        />
       </div>
-      <div class="login_kode">
+      <div class="kode">
         <label for="pss_login" class="label">Indtast din adgangskode:</label>
         <input
           type="password"
@@ -59,10 +71,12 @@
           id="pss_login"
           placeholder="Adgangskode"
           class="textbox"
+          required
+          autocomplete="off"
         />
       </div>
-      <div class="login_submit">
-        <input type="submit" value="Log ind" id="submit" />
+      <div class="submit">
+        <input type="submit" value="Log ind" id="submit" autocomplete="off"/>
       </div>
     </form>
   </div>

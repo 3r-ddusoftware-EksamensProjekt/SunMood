@@ -11,11 +11,7 @@
   background-color: rgba(186, 96, 59, 0.5);
 }
 
-.opret {
-  margin: 0;
-}
-
-#opret_content {
+#content {
   display: grid;
   grid-template-areas:
     "header header"
@@ -31,27 +27,27 @@
   padding: 1rem;
 }
 
-.opret_form {
+.form {
   display: contents;
 }
 
-.tilmeld_header {
+.header {
   grid-area: header;
+  margin: 0;
+  color: var(--shades-dark-shades);
 }
 
-.opret_email {
+.email {
   grid-area: email;
   display: block;
-
 }
 
-.opret_kode {
+.kode {
   grid-area: kode;
   display: block;
-
 }
 
-.opret_submit {
+.submit {
   grid-area: knap;
 }
 
@@ -66,6 +62,13 @@
   box-shadow: 0 4px 10px 0 rgba(36, 58, 58, 0.5);
   margin: 0.5rem;
   line-height: 1;
+}
+
+#submit:hover {
+  cursor: pointer;
+  border: solid 3px #ba603b61;
+  background-color: var(--action-primary);
+  color: var(--action-info);
 }
 
 .textbox {
@@ -83,6 +86,24 @@
   display: block;
   margin: 0 auto;
 }
+
+.textbox:required:invalid {
+  border-color: var(--action-danger);
+}
+
+.textbox:required:valid {
+  border-color: var(--action-success);
+}
+
+.textbox:focus-visible{
+  outline: none;
+}
+
+/*
+  --action-success: #7dab43;
+  --action-warning: #fa9a0b;
+  --action-danger: #f44336;
+*/
 
 .label {
   font-size: 1.2rem;
