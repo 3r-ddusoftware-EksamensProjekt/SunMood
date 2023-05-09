@@ -95,7 +95,7 @@
   border-color: var(--action-success);
 }
 
-.textbox:focus-visible{
+.textbox:focus-visible {
   outline: none;
 }
 

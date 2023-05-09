@@ -9,7 +9,7 @@ const btnLogin = document.getElementById("login_btn");
 const btnOpret = document.getElementById("opret_btn");
 
 // Get the <span> element that closes the modal
-const spanLogin = document.getElementById("close_login")
+const spanLogin = document.getElementById("close_login");
 const closeOpret = document.getElementById("close_opret");
 
 btnLogin.addEventListener("click", () => {
