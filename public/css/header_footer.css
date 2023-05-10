@@ -59,7 +59,6 @@
 }
 
 #opret_bruger {
-  
   text-shadow: 0px 0px 5px var(--shades-light-shade);
 }
 
@@ -67,10 +66,13 @@
   color: var(--shades-light-shade);
   text-shadow: 0px 0px 5px var(--shades-dark-shades);
 }
-/* Fotter */
 
+
+
+
+/* Fotter */
 .ul_foot {
-  height: 16rem;
+  height: 8rem;
   list-style-type: none;
   margin: 0;
   padding: 3rem 4%;

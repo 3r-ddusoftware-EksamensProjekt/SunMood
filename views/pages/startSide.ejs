@@ -7,10 +7,9 @@
     />
     <link rel="stylesheet" type="text/css" href="/css/mainStyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/startSide.css" />
-    
 
-    <%- include('../partials/header_footer'); %>
-    <%- include('../partials/popup'); %>
+    <%- include('../partials/header_footer'); %> <%-
+    include('../partials/popup'); %>
 
     <script src="js/cssHelp.js" defer></script>
   </head>
@@ -18,14 +17,19 @@
   <body>
     <header id="myHeader"><%- include("../partials/nav_head"); %></header>
 
-    <div class="welcome"></div>
+    <div class="welcome"><h1>Welcome</h1></div>
     <div class="info">
       <p>
         Dette er <strong>eksempel 1</strong>, som har samme head og navbar som
         eksempel 2 vha. partials.
       </p>
     </div>
-    <div class="getStarted"></div>
+    <div class="getStarted">
+      <p>
+        Log ind <br />
+        Opret bruger
+      </p>
+    </div>
 
     <footer><%- include("../partials/nav_foot") %></footer>
   </body>
