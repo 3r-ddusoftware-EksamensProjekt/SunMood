@@ -67,12 +67,9 @@
   text-shadow: 0px 0px 5px var(--shades-dark-shades);
 }
 
-
-
-
 /* Fotter */
 .ul_foot {
-  height: 8rem;
+  height: 2.5rem;
   list-style-type: none;
   margin: 0;
   padding: 3rem 4%;
@@ -119,6 +116,7 @@ https://www.w3schools.com/howto/howto_js_sticky_header.asp
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/mainStyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/sunMood.css" />
     <link rel="stylesheet" type="text/css" href="/css/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/popup.css" />
 
     <script src="js/popup.js" defer></script>
     <script src="js/cssHelp.js" defer></script>
@@ -15,31 +16,30 @@
     <%- include('../partials/popup'); %> <%- include('../partials/moodBoard');
     %>
   </head>
-
   <body>
     <header id="myHeader"><%- include("../partials/nav_head"); %></header>
 
     <div class="samlet">
       <div class="timer">
-        <div id="top" class="amountSun Body-P-Larger">
+        <div id="top" class="amountSun Body-P-Larger top">
           Mængden af Sollys i dag er ... timer
         </div>
         <div class="vejrImage">
           <img src="" alt="" />
         </div>
-        <div id="bottom" class="amountSun Body-P-Larger">
+        <div id="bottom" class="amountSun Body-P-Larger bottom">
           Det er x flere timer end i går
         </div>
       </div>
       <div class="mood">
-        <div class="moodText Body-P-Larger">Hvordan er dit humør?</div>
+        <div class="moodText Body-P-Larger top">Hvordan er dit humør?</div>
         <div class="moodImage_btn">
           <button id="mood_btn">
-            <img src="" alt="" id="moodImage_btn" />
+            <img src="/images/Solikon.svg" alt="Solikon" id="moodImage_btn" />
+            <div class="imageText">Klik her for at vælge dit humør</div>
           </button>
-          <div class="imageText">Klik her for at vælge dit humør</div>
         </div>
-        <div class="amountSun Body-P-Small">Se humør historik</div>
+        <div class="amountSun Body-P-Small bottom">Se humør historik</div>
       </div>
     </div>
 
