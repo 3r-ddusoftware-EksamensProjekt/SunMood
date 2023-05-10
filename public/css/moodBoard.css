@@ -1,0 +1,35 @@
+.moodBoard_Modal {
+  background-color: var(--shades-light-shade);
+  width: 60%;
+  z-index: 4;
+}
+
+.moodGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.moodElement {
+  background-color: var(--shades-light-accent);
+}
+
+@media only screen and (max-width: 768px) {
+  .moodGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .moodGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+h3 {
+    line-height: 1;
+    margin: 1rem 0 0;
+}

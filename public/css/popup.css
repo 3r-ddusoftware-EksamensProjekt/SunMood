@@ -1,13 +1,13 @@
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 */
 
-.popup {
+dialog {
   background-color: var(--shades-main-brand-color);
   border-radius: 15px;
   border: solid 2px rgba(0, 0, 0, 0.5);
 }
 
-.popup::backdrop {
+dialog::backdrop {
   background-color: rgba(186, 96, 59, 0.5);
 }
 
