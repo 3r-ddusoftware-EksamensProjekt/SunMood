@@ -1,18 +1,24 @@
 .welcome {
   height: 62.5rem;
-  align-self: stretch;
-  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 4rem;
-  background: var(--shades-main-brand-color);
   background: linear-gradient(
     180deg,
     var(--shades-main-brand-color) 0%,
     var(--shades-light-shade) 100%
   );
+}
+
+.welcome > h1:nth-child(1) {
+  line-height: 0;
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 0.135em;
+  position: relative;
+  top: -30%;
 }
 
 .info {
