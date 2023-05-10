@@ -15,7 +15,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   background-color: rgba(242, 246, 240, 0.75);
-  margin: auto 0;
+  margin: 1rem 0;
 }
 
 /* Define grid items */
@@ -46,7 +46,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
-  width: 10rem;
+  width: 20rem;
 }
 
 /*
@@ -55,8 +55,9 @@ justify-content: space-evenly;
 align-content: center;
 */
 
-#moodImage_btn {
-  width: 15rem;
+#moodImage_btn,
+#vejrImage {
+  width: 30rem;
 }
 
 #mood_btn {
@@ -65,10 +66,44 @@ align-content: center;
   position: relative;
 }
 
+/* Add hover effect */
+#mood_btn:hover #moodImage_btn {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
 .bottom {
   margin: 0 1rem 1.5rem;
 }
 
 .top {
   margin: 1.5rem 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #moodImage_btn,
+  #vejrImage {
+    width: 20rem;
+  }
+  .Body-P-Larger {
+    font-size: 1.5rem;
+  }
+  .imageText {
+    font-size: 1.2rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #moodImage_btn,
+  #vejrImage {
+    width: 13rem;
+  }
+  .Body-P-Larger {
+    font-size: 1.2rem;
+  }
+  .imageText {
+    font-size: 1rem;
+    width: 5rem;
+  }
 }

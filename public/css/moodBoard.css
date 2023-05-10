@@ -2,34 +2,66 @@
   background-color: var(--shades-light-shade);
   width: 60%;
   z-index: 4;
+  height: 90%;
 }
 
 .moodGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
+  margin: 0.5rem 0;
 }
 
 .moodElement {
   background-color: var(--shades-light-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.moodElement:hover {
+  background-color: var(--shades-dark-shades);
+  transform: scale(0.95);
+  color: var(--shades-light-shade);
+}
+
+@media only screen and (min-width: 768px) {
+  .moodGrid {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .moodGrid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
   }
 }
 
 @media only screen and (max-width: 480px) {
   .moodGrid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto);
   }
 }
 
-h3 {
-    line-height: 1;
-    margin: 1rem 0 0;
+h4 {
+  text-align: center;
+}
+
+.moodLabel {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+}
+
+.moodImage {
+  margin-bottom: 0.5rem;
 }
