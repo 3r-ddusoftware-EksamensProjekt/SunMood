@@ -1,23 +1,27 @@
-// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
+
+/* 
+<a https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal> </a>
+*/
 
 // Get the modal
-const loginModal = document.getElementById("login_popup");
-const opretModal = document.getElementById("opret_popup");
-const moodModal = document.getElementById("moodBoard");
+let loginModal = document.getElementById("login_popup");
+let opretModal = document.getElementById("opret_popup");
+let moodModal = document.getElementById("moodBoard");
 
 //
 //
 // Get the button that opens the modal
-const btnLogin = document.getElementById("login_btn");
-const btnOpret = document.getElementById("opret_btn");
-const btnMood = document.getElementById("mood_btn");
+let btnLogin = document.getElementById("login_btn");
+let btnOpret = document.getElementById("opret_btn");
+let btnMood = document.getElementById("mood_btn");
 
 //
 //
 // Get the <span> element that closes the modal
-const closeLogin = document.getElementById("close_login");
-const closeOpret = document.getElementById("close_opret");
-const closeMood = document.getElementById("close_mood");
+let closeLogin = document.getElementById("close_login");
+let closeOpret = document.getElementById("close_opret");
+let closeMood = document.getElementById("close_mood");
 
 //
 //
@@ -67,7 +71,7 @@ moodModal.addEventListener("click", (e) =>
  * @param e - The "e" parameter in this function refers to the event object that is passed when the user clicks outside the modal. It contains information about the event, such as the mouse coordinates and the target element.
  */
 function closeModalOnClickOutside(modal, e) {
-  const dialogDimensions = modal.getBoundingClientRect();
+  let dialogDimensions = modal.getBoundingClientRect();
   if (
     e.clientX < dialogDimensions.left ||
     e.clientX > dialogDimensions.right ||
