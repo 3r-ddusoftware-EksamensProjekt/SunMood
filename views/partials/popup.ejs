@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/popup.css" />
 
-<script src="js/popup.js" defer></script>
+
 
 <dialog id="opret_popup" class="popup">
   <span class="close" id="close_opret">&times;</span>
@@ -12,7 +12,7 @@
 
     <form class="form">
       <div class="email">
-        <label for="email" class="opret label">Indtast din email:</label>
+        <label for="email_op" class="opret label">Indtast din email:</label>
         <input
           type="email"
           placeholder="Email"
@@ -20,6 +20,7 @@
           class="opret textbox"
           required
           autocomplete="off"
+          id="email_op"
         />
       </div>
       <div class="kode">
@@ -58,7 +59,7 @@
 
     <form class="form">
       <div class="email">
-        <label for="email" class="label">Indtast din email:</label>
+        <label for="email_log" class="label">Indtast din email:</label>
         <input
           type="email"
           placeholder="Email"
@@ -66,6 +67,7 @@
           class="textbox"
           required
           autocomplete="off"
+          id="email_log"
         />
       </div>
       <div class="kode">

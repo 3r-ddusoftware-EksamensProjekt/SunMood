@@ -28,7 +28,7 @@ footer {
 
 /* Define styles for specific elements */
 .vejrImage,
-.moodImage {
+.moodImage_btn {
   display: flex;
   justify-content: center;
   align-items: center;

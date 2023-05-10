@@ -3,40 +3,69 @@
 // Get the modal
 const loginModal = document.getElementById("login_popup");
 const opretModal = document.getElementById("opret_popup");
+const moodModal = document.getElementById("moodBoard");
 
+//
+//
 // Get the button that opens the modal
 const btnLogin = document.getElementById("login_btn");
 const btnOpret = document.getElementById("opret_btn");
+const btnMood = document.getElementById("mood_btn");
 
+//
+//
 // Get the <span> element that closes the modal
-const spanLogin = document.getElementById("close_login");
+const closeLogin = document.getElementById("close_login");
 const closeOpret = document.getElementById("close_opret");
+const closeMood = document.getElementById("close_mood");
 
+//
+//
+// Add event listeners for when the button is clicked
 btnLogin.addEventListener("click", () => {
   loginModal.showModal();
 });
 btnOpret.addEventListener("click", () => {
   opretModal.showModal();
 });
+btnMood.addEventListener("click", () => {
+  moodModal.showModal();
+});
 
+//
+//
 // When the user clicks on <span> (x), close the modal
 closeOpret.onclick = function () {
   opretModal.close();
 };
-
-// When the user clicks on <span> (x), close the modal
-spanLogin.onclick = function () {
+closeLogin.onclick = function () {
   loginModal.close();
 };
+closeMood.onclick = function () {
+  moodModal.close();
+};
 
+//
+//
+// calls the function to close the modal if clicked outside of it.
 opretModal.addEventListener("click", (e) =>
   closeModalOnClickOutside(opretModal, e)
 );
 loginModal.addEventListener("click", (e) =>
   closeModalOnClickOutside(loginModal, e)
 );
+moodModal.addEventListener("click", (e) =>
+  closeModalOnClickOutside(moodModal, e)
+);
+//
+//
 //
 
+/**
+ * This function closes a modal when the user clicks outside of it.
+ * @param modal - The modal parameter is likely a reference to the modal element that is being displayed on the page. This function is likely used to close the modal when the user clicks outside of it.
+ * @param e - The "e" parameter in this function refers to the event object that is passed when the user clicks outside the modal. It contains information about the event, such as the mouse coordinates and the target element.
+ */
 function closeModalOnClickOutside(modal, e) {
   const dialogDimensions = modal.getBoundingClientRect();
   if (

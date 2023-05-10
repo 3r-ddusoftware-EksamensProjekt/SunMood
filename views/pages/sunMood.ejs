@@ -7,11 +7,13 @@
     />
     <link rel="stylesheet" type="text/css" href="/css/mainStyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/sunMood.css" />
+    <link rel="stylesheet" type="text/css" href="/css/header_footer.css" />
 
-    <%- include("../partials/header_footer") %> <%-
-    include('../partials/popup'); %>
-
+    <script src="js/popup.js" defer></script>
     <script src="js/cssHelp.js" defer></script>
+
+    <%- include('../partials/popup'); %> <%- include('../partials/moodBoard');
+    %>
   </head>
 
   <body>
@@ -19,16 +21,22 @@
 
     <div class="samlet">
       <div class="timer">
-        <div id="top" class="amountSun Body-P-Larger">Mængden af Sollys i dag er ... timer</div>
+        <div id="top" class="amountSun Body-P-Larger">
+          Mængden af Sollys i dag er ... timer
+        </div>
         <div class="vejrImage">
           <img src="" alt="" />
         </div>
-        <div id="bottom" class="amountSun Body-P-Larger">Det er x flere timer end i går</div>
+        <div id="bottom" class="amountSun Body-P-Larger">
+          Det er x flere timer end i går
+        </div>
       </div>
       <div class="mood">
         <div class="moodText Body-P-Larger">Hvordan er dit humør?</div>
-        <div class="moodImage">
-          <img src="" alt="" />
+        <div class="moodImage_btn">
+          <button id="mood_btn">
+            <img src="" alt="" id="moodImage_btn" />
+          </button>
           <div class="imageText">Klik her for at vælge dit humør</div>
         </div>
         <div class="amountSun Body-P-Small">Se humør historik</div>
