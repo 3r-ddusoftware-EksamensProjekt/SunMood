@@ -7,21 +7,22 @@
 // Get the modal
 let loginModal = document.getElementById("login_popup");
 let opretModal = document.getElementById("opret_popup");
-let moodModal = document.getElementById("moodBoard");
+
 
 //
 //
 // Get the button that opens the modal
 let btnLogin = document.getElementById("login_btn");
 let btnOpret = document.getElementById("opret_btn");
-let btnMood = document.getElementById("mood_btn");
+
 
 //
 //
 // Get the <span> element that closes the modal
 let closeLogin = document.getElementById("close_login");
 let closeOpret = document.getElementById("close_opret");
-let closeMood = document.getElementById("close_mood");
+
+
 
 //
 //
@@ -31,9 +32,6 @@ btnLogin.addEventListener("click", () => {
 });
 btnOpret.addEventListener("click", () => {
   opretModal.showModal();
-});
-btnMood.addEventListener("click", () => {
-  moodModal.showModal();
 });
 
 //
@@ -45,9 +43,10 @@ closeOpret.onclick = function () {
 closeLogin.onclick = function () {
   loginModal.close();
 };
-closeMood.onclick = function () {
-  moodModal.close();
-};
+
+
+
+
 
 //
 //
@@ -58,9 +57,7 @@ opretModal.addEventListener("click", (e) =>
 loginModal.addEventListener("click", (e) =>
   closeModalOnClickOutside(loginModal, e)
 );
-moodModal.addEventListener("click", (e) =>
-  closeModalOnClickOutside(moodModal, e)
-);
+
 //
 //
 //

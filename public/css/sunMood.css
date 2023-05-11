@@ -23,9 +23,9 @@ footer {
 .mood {
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-gap: 2rem;
+  align-content: center;
 }
-
 /* Define styles for specific elements */
 .vejrImage,
 .moodImage_btn {
@@ -37,7 +37,6 @@ footer {
 .amountSun,
 .moodText {
   text-align: center;
-  line-height: 1;
 }
 
 .imageText {
@@ -55,9 +54,15 @@ justify-content: space-evenly;
 align-content: center;
 */
 
-#moodImage_btn,
+#moodImage_btn {
+  width: 25rem;
+}
+
 #vejrImage {
-  width: 30rem;
+  width: 64px;
+  height: 64px;
+  transform: scale(3);
+  margin: 2rem;
 }
 
 #mood_btn {
@@ -81,8 +86,7 @@ align-content: center;
 }
 
 @media only screen and (max-width: 768px) {
-  #moodImage_btn,
-  #vejrImage {
+  #moodImage_btn {
     width: 20rem;
   }
   .Body-P-Larger {
@@ -95,8 +99,7 @@ align-content: center;
 }
 
 @media only screen and (max-width: 480px) {
-  #moodImage_btn,
-  #vejrImage {
+  #moodImage_btn {
     width: 13rem;
   }
   .Body-P-Larger {

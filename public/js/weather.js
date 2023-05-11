@@ -1,35 +1,20 @@
 //"http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no"
 // sollys i dag
 
-/**
- * hvad skal jeg lave?
- *
- * Finde ud af hvornår solen står op og går ned, og så finder antal timer på døgn
- *
- * finde ud af fra json fil:
- * hvonår solen står op og går ned, for at kunne tjekke timerne mellem der - gem værdi
- *
- * tjek timerne mellem solen står op og går, find procent skyer, samt vejr.
- *
- * for de timer hvor der er mere end 50% skyer, skal der blive taget en time fra solly i alt
- * tilføj i alt timer til database
- *
- * skrive forskellige promts, i forhold til mængde sollys.
- *
- * find mængde sollys for dagen før
- *
- */
+//const text = document.getElementById("text");
+const icon = document.getElementById("vejrImage");
+//const time = document.getElementById("time");
+//const isDay = document.getElementById("isDay");
+//const cloud = document.getElementById("cloud");
 
-const text = document.getElementById("text");
-const icon = document.getElementById("icon");
-const time = document.getElementById("time");
-const isDay = document.getElementById("isDay");
-const cloud = document.getElementById("cloud");
+const timerText = document.getElementById("flereTimerText");
+const amountSun = document.getElementById("amountSun");
 
-//let staticURL =
-//  "http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no&lang=da";
+let staticURL =
+  "http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no&lang=da";
 
-//let staticURL = "../version 0.1/Postgres Quickstart/weather.json";
+//let staticURL = "js/weather.json";
+
 // staticURL = data;
 
 function getData() {
@@ -37,25 +22,32 @@ function getData() {
     //async: false,
     url: staticURL,
     dataType: "json",
-    success: function (data) {
-      let datas = data;
+    success: async function (data) {
+      let currentIcon = data.current.condition.icon;
+      icon.src = currentIcon;
 
       let currentCondition = data.current.condition;
       console.log(currentCondition);
 
-      dayAmountHours(datas);
+      let yesterdayHours = await yesterdayAmountHours(
+        data.forecast.forecastday[0].date
+      );
+      let todayHours = dayAmountHours(data);
+      console.log("Yesterday: ", yesterdayHours);
+      console.log("Today: ", todayHours);
 
-      let currentText = data.current.condition.text;
-      let currentIcon = data.current.condition.icon;
-      let timeDay = data.forecast.forecastday[0].hour[2].time;
-      let dayIsDay = data.forecast.forecastday[0].hour[2].is_day;
-      let dayCloud = data.forecast.forecastday[0].hour[2].cloud;
+      totalAmountHours(todayHours, yesterdayHours);
+      //let currentText = data.current.condition.text;
 
-      text.innerHTML = "Vejr " + currentText;
-      icon.src = currentIcon;
-      time.innerHTML = "Tid og dato " + timeDay;
-      isDay.innerHTML = "Er dag " + dayIsDay;
-      cloud.innerHTML = "Procent skyer " + dayCloud + "%";
+      // let timeDay = data.forecast.forecastday[0].hour[2].time;
+      // let dayIsDay = data.forecast.forecastday[0].hour[2].is_day;
+      // let dayCloud = data.forecast.forecastday[0].hour[2].cloud;
+
+      // text.innerHTML = "Vejr " + currentText;
+
+      // time.innerHTML = "Tid og dato " + timeDay;
+      // isDay.innerHTML = "Er dag " + dayIsDay;
+      // cloud.innerHTML = "Procent skyer " + dayCloud + "%";
     },
   });
 }
@@ -83,12 +75,87 @@ $.getJSON(staticURL, function (data) {
 
 function dayAmountHours(data) {
   console.log(data);
+  // Start timeren på 0
+  let hoursToday = 0;
 
-  let astro = data.forecast.forecastday[0].astro;
+  // Loop igennem alle timer i JSON-elementet
+  for (let i = 0; i < 24; i++) {
+    let forecast = data.forecast.forecastday[0].hour[i];
+    // Hvis is_day = 1 og condition.text = sunny eller clear, så tæl 1 til timeren
+    if (
+      forecast.is_day === 1 &&
+      (forecast.condition.text === "Sunny" ||
+        forecast.condition.text === "Clear")
+    ) {
+      hoursToday++;
+    }
+  }
+  return hoursToday;
+}
 
-  console.log(astro);
+async function yesterdayAmountHours(dateString) {
+  let date = new Date(dateString);
+  date.setDate(date.getDate() - 1);
 
-  return;
+  let yesterDate = date.toISOString().slice(0, 10);
+
+  let yesterdayURL = `http://api.weatherapi.com/v1/history.json?key=0de091b05e714a72a3385754230603&q=Slagelse&lang=da&dt=${yesterDate}`;
+
+  try {
+    let response = await fetch(yesterdayURL);
+    let data = await response.json();
+    let hoursYesterday = 0;
+
+    for (let i = 0; i < 24; i++) {
+      let forecast = data.forecast.forecastday[0].hour[i];
+
+      if (
+        forecast.is_day === 1 &&
+        (forecast.condition.text === "Sunny" ||
+          forecast.condition.text === "Clear")
+      ) {
+        hoursYesterday++;
+      }
+    }
+    return hoursYesterday;
+  } catch (error) {
+    console.error("Error fetching yesterday's weather data:", error);
+    throw error;
+  }
+}
+
+function totalAmountHours(today, yesterday) {
+  // Calculate the difference between the two values
+  let sunlightDifference = today - yesterday;
+
+  amountSun.innerHTML = `I dag skinner solen i alt i ${today} timer.`;
+
+  // Compare the two values and print the result
+  if (sunlightDifference > 0) {
+    console.log(`Der er ${sunlightDifference} timer mere sollys i dag.`);
+    timerText.innerHTML = `Det er ${sunlightDifference} timer mere sollys i dag,</br> end der var i går.`;
+  } else if (sunlightDifference < 0) {
+    timerText.innerHTML = `Det er ${Math.abs(
+      sunlightDifference
+    )} timer mindre sollys i dag, </br> end der var i går.`;
+  } else {
+    timerText.innerHTML =
+      "Det er den samme mængde sollys i dag som der var i går.";
+  }
 }
 
 getData();
+
+/**
+ * Sunny
+ * Clear
+ * 1 = Yes 0 = No
+Whether to show day condition icon or night icon
+ */
+
+/**
+ * timer = 0
+ * find is_day = 1
+ * så tjek condition.text = sunny or clear, plus 1 til timer
+ * loop igennem alle timer fra json element
+ */

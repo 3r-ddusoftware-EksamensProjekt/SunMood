@@ -1,0 +1,306 @@
+{
+  "location": {
+    "name": "Slagelse",
+    "region": "Sjelland",
+    "country": "Denmark",
+    "lat": 55.4,
+    "lon": 11.37,
+    "tz_id": "Europe/Copenhagen",
+    "localtime_epoch": 1683759510,
+    "localtime": "2023-05-11 0:58"
+  },
+  "current": {
+    "last_updated_epoch": 1683758700,
+    "last_updated": "2023-05-11 00:45",
+    "is_day": 0,
+    "condition": {
+      "text": "Clear",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+      "code": 1000
+    },
+    "cloud": 0,
+    "uv": 1
+  },
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2023-05-11",
+        "date_epoch": 1683763200,
+        "day": {
+          "totalsnow_cm": 0,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "code": 1003
+          }
+        },
+        "hour": [
+          {
+            "time_epoch": 1683756000,
+            "time": "2023-05-11 00:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Partly cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+              "code": 1003
+            },
+            "cloud": 53
+          },
+          {
+            "time_epoch": 1683759600,
+            "time": "2023-05-11 01:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Mist",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
+              "code": 1030
+            },
+            "cloud": 80
+          },
+          {
+            "time_epoch": 1683763200,
+            "time": "2023-05-11 02:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Fog",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/248.png",
+              "code": 1135
+            },
+            "cloud": 100
+          },
+          {
+            "time_epoch": 1683766800,
+            "time": "2023-05-11 03:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Fog",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/248.png",
+              "code": 1135
+            },
+            "cloud": 100
+          },
+          {
+            "time_epoch": 1683770400,
+            "time": "2023-05-11 04:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Mist",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
+              "code": 1030
+            },
+            "cloud": 85
+          },
+          {
+            "time_epoch": 1683774000,
+            "time": "2023-05-11 05:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Mist",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
+              "code": 1030
+            },
+            "cloud": 80
+          },
+          {
+            "time_epoch": 1683777600,
+            "time": "2023-05-11 06:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+              "code": 1006
+            },
+            "cloud": 73
+          },
+          {
+            "time_epoch": 1683781200,
+            "time": "2023-05-11 07:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Partly cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+              "code": 1003
+            },
+            "cloud": 57
+          },
+          {
+            "time_epoch": 1683784800,
+            "time": "2023-05-11 08:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Partly cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+              "code": 1003
+            },
+            "cloud": 45
+          },
+          {
+            "time_epoch": 1683788400,
+            "time": "2023-05-11 09:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+              "code": 1006
+            },
+            "cloud": 77
+          },
+          {
+            "time_epoch": 1683792000,
+            "time": "2023-05-11 10:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Partly cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+              "code": 1003
+            },
+            "cloud": 29
+          },
+          {
+            "time_epoch": 1683795600,
+            "time": "2023-05-11 11:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 17
+          },
+          {
+            "time_epoch": 1683799200,
+            "time": "2023-05-11 12:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 15
+          },
+          {
+            "time_epoch": 1683802800,
+            "time": "2023-05-11 13:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Patchy rain possible",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+              "code": 1063
+            },
+            "cloud": 81
+          },
+          {
+            "time_epoch": 1683806400,
+            "time": "2023-05-11 14:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Partly cloudy",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+              "code": 1003
+            },
+            "cloud": 26
+          },
+          {
+            "time_epoch": 1683810000,
+            "time": "2023-05-11 15:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 20
+          },
+          {
+            "time_epoch": 1683813600,
+            "time": "2023-05-11 16:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 15
+          },
+          {
+            "time_epoch": 1683817200,
+            "time": "2023-05-11 17:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 12
+          },
+          {
+            "time_epoch": 1683820800,
+            "time": "2023-05-11 18:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 10
+          },
+          {
+            "time_epoch": 1683824400,
+            "time": "2023-05-11 19:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 9
+          },
+          {
+            "time_epoch": 1683828000,
+            "time": "2023-05-11 20:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 9
+          },
+          {
+            "time_epoch": 1683831600,
+            "time": "2023-05-11 21:00",
+            "is_day": 1,
+            "condition": {
+              "text": "Sunny",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "code": 1000
+            },
+            "cloud": 7
+          },
+          {
+            "time_epoch": 1683835200,
+            "time": "2023-05-11 22:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 5
+          },
+          {
+            "time_epoch": 1683838800,
+            "time": "2023-05-11 23:00",
+            "is_day": 0,
+            "condition": {
+              "text": "Clear",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              "code": 1000
+            },
+            "cloud": 2
+          }
+        ]
+      }
+    ]
+  }
+}
