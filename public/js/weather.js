@@ -1,17 +1,12 @@
 //"http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no"
 // sollys i dag
 
-//const text = document.getElementById("text");
 const icon = document.getElementById("vejrImage");
-//const time = document.getElementById("time");
-//const isDay = document.getElementById("isDay");
-//const cloud = document.getElementById("cloud");
-
 const timerText = document.getElementById("flereTimerText");
 const amountSun = document.getElementById("amountSun");
 
 let staticURL =
-  "http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no&lang=da";
+  "http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no";
 
 //let staticURL = "js/weather.json";
 
@@ -37,41 +32,9 @@ function getData() {
       console.log("Today: ", todayHours);
 
       totalAmountHours(todayHours, yesterdayHours);
-      //let currentText = data.current.condition.text;
-
-      // let timeDay = data.forecast.forecastday[0].hour[2].time;
-      // let dayIsDay = data.forecast.forecastday[0].hour[2].is_day;
-      // let dayCloud = data.forecast.forecastday[0].hour[2].cloud;
-
-      // text.innerHTML = "Vejr " + currentText;
-
-      // time.innerHTML = "Tid og dato " + timeDay;
-      // isDay.innerHTML = "Er dag " + dayIsDay;
-      // cloud.innerHTML = "Procent skyer " + dayCloud + "%";
     },
   });
 }
-
-/*
-$.getJSON(staticURL, function (data) {
-  console.log("hello");
-  console.log(data);
-  //console.log(data.current.condition);
-
-  let currentText = data.current.condition.text;
-  let currentIcon = data.current.condition.icon;
-  let timeDay = data.forecast.forecastday[0].hour[2].time;
-  let dayIsDay = data.forecast.forecastday[0].hour[2].is_day;
-  let dayCloud = data.forecast.forecastday[0].hour[2].cloud;
-
-  text.innerHTML = "Vejr " + currentText;
-  icon.src = currentIcon;
-  time.innerHTML = "Tid og dato " + timeDay;
-  isDay.innerHTML = "Er dag " + dayIsDay;
-  cloud.innerHTML = "Procent skyer " + dayCloud + "%";
-
-  return data;
-});*/
 
 function dayAmountHours(data) {
   console.log(data);
@@ -99,7 +62,7 @@ async function yesterdayAmountHours(dateString) {
 
   let yesterDate = date.toISOString().slice(0, 10);
 
-  let yesterdayURL = `http://api.weatherapi.com/v1/history.json?key=0de091b05e714a72a3385754230603&q=Slagelse&lang=da&dt=${yesterDate}`;
+  let yesterdayURL = `http://api.weatherapi.com/v1/history.json?key=0de091b05e714a72a3385754230603&q=Slagelse&dt=${yesterDate}`;
 
   try {
     let response = await fetch(yesterdayURL);
