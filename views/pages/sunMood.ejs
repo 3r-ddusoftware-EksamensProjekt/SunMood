@@ -9,7 +9,14 @@
     <link rel="stylesheet" type="text/css" href="/css/sunMood.css" />
     <link rel="stylesheet" type="text/css" href="/css/header_footer.css" />
     <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+      defer
+    ></script>
 
+    <script src="./js/weather.js" defer></script>
     <script src="js/popup.js" defer></script>
     <script src="js/cssHelp.js" defer></script>
 
@@ -21,13 +28,13 @@
 
     <div class="samlet">
       <div class="timer">
-        <div id="top" class="amountSun Body-P-Larger top">
+        <div id="amountSun" class="amountSun Body-P-Larger top">
           Mængden af Sollys i dag er ... timer
         </div>
         <div class="vejrImage">
-          <img src="" alt="" id="vejrImage"/>
+          <img src="" alt="" id="vejrImage" />
         </div>
-        <div id="bottom" class="amountSun Body-P-Larger bottom">
+        <div id="flereTimerText" class="amountSun Body-P-Larger bottom">
           Det er x flere timer end i går
         </div>
       </div>
