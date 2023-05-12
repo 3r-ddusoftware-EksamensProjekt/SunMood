@@ -1,4 +1,5 @@
-/* https://www.w3schools.com/howto/howto_js_sticky_header.asp
+/* 
+Kode er hentet fra: https://www.w3schools.com/howto/howto_js_sticky_header.asp
  */
 
 // When the user scrolls the page, execute myFunction
