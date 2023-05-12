@@ -1,7 +1,3 @@
-/* 
- 
-*/
-
 // Get the modal
 let loginModal = document.getElementById("login_popup");
 let opretModal = document.getElementById("opret_popup");
