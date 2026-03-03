@@ -6,7 +6,7 @@ const timerText = document.getElementById("flereTimerText");
 const amountSun = document.getElementById("amountSun");
 
 let staticURL =
-  "http://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no";
+  "https://api.weatherapi.com/v1/forecast.json?key=0de091b05e714a72a3385754230603&q=Slagelse&days=1&aqi=no&alerts=no";
 
 //let staticURL = "js/weather.json";
 
@@ -25,7 +25,7 @@ function getData() {
       console.log(currentCondition);
 
       let yesterdayHours = await yesterdayAmountHours(
-        data.forecast.forecastday[0].date
+        data.forecast.forecastday[0].date,
       );
       let todayHours = dayAmountHours(data);
       console.log("Yesterday: ", yesterdayHours);
@@ -99,7 +99,7 @@ function totalAmountHours(today, yesterday) {
     timerText.innerHTML = `Det er ${sunlightDifference} timer mere sollys i dag,</br> end der var i går.`;
   } else if (sunlightDifference < 0) {
     timerText.innerHTML = `Det er ${Math.abs(
-      sunlightDifference
+      sunlightDifference,
     )} timer mindre sollys i dag, </br> end der var i går.`;
   } else {
     timerText.innerHTML =
