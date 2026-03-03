@@ -1,4 +1,13 @@
-# Node build artifacts
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+coverage/
+.vscode/
+.idea/
+dist/
+build/
+/*.log# Node build artifacts
 node_modules
 npm-debug.log
 
